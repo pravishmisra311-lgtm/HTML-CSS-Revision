@@ -13,8 +13,8 @@
         margin-bottom: 0;
       }
         .thumbnail{
-          width:300px;
-            display:block;
+          width:100%;
+          
         }
         .search-bar{
             font-size:20px;
@@ -27,21 +27,12 @@
           line-height: 20px;
           margin-bottom:12px;
         }
-        .video-preview{
-          width:300px;
-          display:inline-block;
-          vertical-align: top;
-          margin-left:15px;
+
+        .video-info-grid{
+          display:grid;
+          grid-template-columns: 50px 1fr;
         }
-        .channel-picture{
-          display:inline-block;
-          width:50px;
-          vertical-align: top;
-        }
-        .video-info{
-          display:inline-block;
-          width:200px;
-        }
+        
         .profile-picture{
           width:40px;
           border-radius:50px;
@@ -57,15 +48,23 @@
         .video-author{
           margin-bottom:4px;
         }
+        .video-grid{
+          display:grid;
+          grid-template-columns:1fr 1fr 1fr;
+          column-gap:16px;
+          row-gap:40px;
+        }
     </style>
 </head>
 <body>
   <input class="search-bar" type="text" placeholder="Search">
+
+  <div class="video-grid">
     <div class="video-preview">
       <div class="thumbnail-row">
         <img class="thumbnail" src="thumbnails/thumbnail-1.webp" alt="">
       </div>
-      <div>
+      <div class="video-info-grid">
         <div class="channel-picture">
           <img class="profile-picture" src="channels/channel-1.jpg">
         </div>
@@ -81,7 +80,7 @@
       <div class="thumbnail-row">
         <img class="thumbnail" src="thumbnails/thumbnail-2.webp" alt="">
       </div>
-      <div>
+      <div class="video-info-grid">
         <div class="channel-picture">
           <img class="profile-picture" src="channels/channel-2.jpg">
         </div>
@@ -97,7 +96,7 @@
       <div class="thumbnail-row">
         <img class="thumbnail" src="thumbnails/thumbnail-3.webp" alt="">
       </div>
-      <div>
+      <div class="video-info-grid">
         <div class="channel-picture">
           <img class="profile-picture" src="channels/channel-3.jpg">
         </div>
@@ -113,7 +112,7 @@
       <div class="thumbnail-row">
         <img class="thumbnail" src="thumbnails/thumbnail-4.webp" alt="">
       </div>
-      <div>
+      <div class="video-info-grid">
         <div class="channel-picture">
           <img class="profile-picture" src="channels/channel-4.jpg">
         </div>
@@ -129,7 +128,7 @@
       <div class="thumbnail-row">
         <img class="thumbnail" src="thumbnails/thumbnail-5.webp" alt="">
       </div>
-      <div>
+      <div class="video-info-grid">
         <div class="channel-picture">
           <img class="profile-picture" src="channels/channel-5.jpg">
         </div>
@@ -145,7 +144,7 @@
       <div class="thumbnail-row">
         <img class="thumbnail" src="thumbnails/thumbnail-6.webp" alt="">
       </div>
-      <div>
+      <div class="video-info-grid">
         <div class="channel-picture">
           <img class="profile-picture" src="channels/channel-6.jpg">
         </div>
@@ -161,7 +160,7 @@
       <div class="thumbnail-row">
         <img class="thumbnail" src="thumbnails/thumbnail-7.webp" alt="">
       </div>
-      <div>
+      <div class="video-info-grid">
         <div class="channel-picture">
           <img class="profile-picture" src="channels/channel-7.jpg">
         </div>
@@ -177,7 +176,7 @@
       <div class="thumbnail-row">
         <img class="thumbnail" src="thumbnails/thumbnail-8.webp" alt="">
       </div>
-      <div>
+      <div class="video-info-grid">
         <div class="channel-picture">
           <img class="profile-picture" src="channels/channel-8.jpg">
         </div>
@@ -193,7 +192,7 @@
       <div class="thumbnail-row">
         <img class="thumbnail" src="thumbnails/thumbnail-9.webp" alt="">
       </div>
-      <div>
+      <div class="video-info-grid">
         <div class="channel-picture">
           <img class="profile-picture" src="channels/channel-9.jpg">
         </div>
@@ -209,7 +208,7 @@
       <div class="thumbnail-row">
         <img class="thumbnail" src="thumbnails/thumbnail-10.webp" alt="">
       </div>
-      <div>
+      <div class="video-info-grid">
         <div class="channel-picture">
           <img class="profile-picture" src="channels/channel-10.jpg">
         </div>
@@ -225,7 +224,7 @@
       <div class="thumbnail-row">
         <img class="thumbnail" src="thumbnails/thumbnail-11.webp" alt="">
       </div>
-      <div>
+      <div class="video-info-grid">
         <div class="channel-picture">
           <img class="profile-picture" src="channels/channel-11.jpg">
         </div>
@@ -241,7 +240,7 @@
       <div class="thumbnail-row">
         <img class="thumbnail" src="thumbnails/thumbnail-12.webp" alt="">
       </div>
-      <div>
+      <div class="video-info-grid">
         <div class="channel-picture">
           <img class="profile-picture" src="channels/channel-12.jpg">
         </div>
@@ -252,6 +251,6 @@
         </div>
       </div>
       </div>
-
+  </div>
 </body>
 </html>
